@@ -23,12 +23,6 @@
         <module>dependencies</module>
         <module>frameworks</module>
         <module>services</module>
-        <module>services/aggregation-service</module>
-        <module>services/gateway-service</module>
-        <module>services/order-service</module>
-        <module>services/pay-service</module>
-        <module>services/ticket-service</module>
-        <module>services/user-service</module>
     </modules>
 
     <dependencies>
