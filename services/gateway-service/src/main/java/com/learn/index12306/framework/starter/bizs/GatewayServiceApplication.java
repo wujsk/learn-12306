@@ -1,4 +1,4 @@
-package com.learn.index12306;
+package com.learn.index12306.framework.starter.bizs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

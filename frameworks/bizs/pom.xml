@@ -5,16 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.learn.index12306</groupId>
-        <artifactId>learn-12306</artifactId>
+        <artifactId>index12306-frameworks</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>index12306-frameworks</artifactId>
+    <artifactId>index12306-bizs-spring-boot-starter</artifactId>
     <packaging>pom</packaging>
-
     <modules>
-        <module>base</module>
-        <module>bizs</module>
+        <module>user</module>
     </modules>
 
 </project>
