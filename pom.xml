@@ -23,6 +23,7 @@
         <module>dependencies</module>
         <module>frameworks</module>
         <module>services</module>
+        <module>frameworks/convention</module>
     </modules>
 
     <dependencies>
