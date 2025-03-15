@@ -25,6 +25,8 @@
         <module>services</module>
         <module>frameworks/convention</module>
         <module>frameworks/designpattern</module>
+        <module>frameworks/distributedid</module>
+        <module>frameworks/log</module>
     </modules>
 
     <dependencies>
