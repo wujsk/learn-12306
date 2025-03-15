@@ -24,6 +24,7 @@
         <module>frameworks</module>
         <module>services</module>
         <module>frameworks/convention</module>
+        <module>frameworks/designpattern</module>
     </modules>
 
     <dependencies>

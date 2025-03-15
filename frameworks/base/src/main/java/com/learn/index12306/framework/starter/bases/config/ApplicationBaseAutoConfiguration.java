@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
  * @description: 应用基础自动装配
  **/
 @Configuration
-public class ApplicationBaseAutoConfig {
+public class ApplicationBaseAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean
