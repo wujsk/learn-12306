@@ -27,6 +27,7 @@
         <module>frameworks/designpattern</module>
         <module>frameworks/distributedid</module>
         <module>frameworks/log</module>
+        <module>frameworks/web</module>
     </modules>
 
     <dependencies>
