@@ -28,6 +28,9 @@
         <module>frameworks/distributedid</module>
         <module>frameworks/log</module>
         <module>frameworks/web</module>
+        <module>frameworks/database</module>
+        <module>frameworks/common</module>
+        <module>frameworks/idempotent</module>
     </modules>
 
     <dependencies>
