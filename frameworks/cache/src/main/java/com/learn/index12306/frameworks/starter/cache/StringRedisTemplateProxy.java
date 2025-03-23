@@ -34,9 +34,9 @@ public class StringRedisTemplateProxy implements DistributedCache{
 
     private final StringRedisTemplate stringRedisTemplate;
 
-    private final RedissonClient redissonClient;
-
     private final RedisDistributedProperties redisDistributedProperties;
+
+    private final RedissonClient redissonClient;
 
     private static final String LUA_PUT_IF_ALL_ABSENT_SCRIPT_PATH = "lua/putIfAllAbsent.lua";
 
