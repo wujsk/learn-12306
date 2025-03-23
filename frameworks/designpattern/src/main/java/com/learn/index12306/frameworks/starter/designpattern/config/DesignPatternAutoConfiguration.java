@@ -1,6 +1,6 @@
 package com.learn.index12306.frameworks.starter.designpattern.config;
 
-import com.learn.index12306.framework.starter.bases.config.ApplicationBaseAutoConfiguration;
+import com.learn.index12306.frameworks.starter.bases.config.ApplicationBaseAutoConfiguration;
 import com.learn.index12306.frameworks.starter.designpattern.chain.AbstractChainContext;
 import com.learn.index12306.frameworks.starter.designpattern.strategy.AbstractStrategyChoose;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;

@@ -1,8 +1,8 @@
 package com.learn.index12306.frameworks.starter.designpattern.strategy;
 
-import com.learn.index12306.framework.starter.bases.ApplicationContextHolder;
-import com.learn.index12306.framework.starter.bases.init.ApplicationInitializingEvent;
-import com.learn.index12306.framework.starter.convention.exception.ServiceException;
+import com.learn.index12306.frameworks.starter.bases.ApplicationContextHolder;
+import com.learn.index12306.frameworks.starter.bases.init.ApplicationInitializingEvent;
+import com.learn.index12306.frameworks.starter.convention.exception.ServiceException;
 import org.springframework.context.ApplicationListener;
 import org.springframework.util.StringUtils;
 

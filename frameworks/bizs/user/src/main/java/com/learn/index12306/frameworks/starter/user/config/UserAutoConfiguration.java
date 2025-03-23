@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplicat
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
-import static com.learn.index12306.framework.starter.bases.constant.FilterOrderConstant.USER_TRANSMIT_FILTER_ORDER;
+import static com.learn.index12306.frameworks.starter.bases.constant.FilterOrderConstant.USER_TRANSMIT_FILTER_ORDER;
 
 /**
  * @author: cyy

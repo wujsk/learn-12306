@@ -1,7 +1,7 @@
 package com.learn.index12306.frameworks.starter.user.util;
 
 import com.alibaba.fastjson2.JSON;
-import com.learn.index12306.framework.starter.bases.constant.UserConstant;
+import com.learn.index12306.frameworks.starter.bases.constant.UserConstant;
 import com.learn.index12306.frameworks.starter.user.core.UserInfoDTO;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;

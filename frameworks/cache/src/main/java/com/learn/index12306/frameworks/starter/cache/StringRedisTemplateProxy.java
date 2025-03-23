@@ -2,7 +2,7 @@ package com.learn.index12306.frameworks.starter.cache;
 
 import com.alibaba.fastjson2.JSON;
 import com.google.common.collect.Lists;
-import com.learn.index12306.framework.starter.bases.Singleton;
+import com.learn.index12306.frameworks.starter.bases.Singleton;
 import com.learn.index12306.frameworks.starter.cache.config.RedisDistributedProperties;
 import com.learn.index12306.frameworks.starter.cache.core.CacheGetFilter;
 import com.learn.index12306.frameworks.starter.cache.core.CacheGetIfAbsent;

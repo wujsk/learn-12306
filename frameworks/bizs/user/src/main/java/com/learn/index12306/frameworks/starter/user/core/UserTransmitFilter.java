@@ -1,6 +1,6 @@
 package com.learn.index12306.frameworks.starter.user.core;
 
-import com.learn.index12306.framework.starter.bases.constant.UserConstant;
+import com.learn.index12306.frameworks.starter.bases.constant.UserConstant;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.util.StringUtils;

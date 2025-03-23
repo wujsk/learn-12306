@@ -1,6 +1,6 @@
 package com.learn.index12306.frameworks.starter.designpattern.chain;
 
-import com.learn.index12306.framework.starter.bases.ApplicationContextHolder;
+import com.learn.index12306.frameworks.starter.bases.ApplicationContextHolder;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.util.CollectionUtils;
 
