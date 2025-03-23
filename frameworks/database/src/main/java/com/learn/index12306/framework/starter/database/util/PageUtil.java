@@ -1,4 +1,4 @@
-package com.learn.index12306.starter.database.util;
+package com.learn.index12306.framework.starter.database.util;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;

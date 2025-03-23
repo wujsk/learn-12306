@@ -1,4 +1,4 @@
-package com.learn.index12306.starter.database.algorithm.sharding;
+package com.learn.index12306.framework.starter.database.algorithm.sharding;
 
 import org.apache.shardingsphere.infra.util.exception.ShardingSpherePreconditions;
 import org.apache.shardingsphere.sharding.algorithm.sharding.ShardingAutoTableAlgorithmUtil;
@@ -8,7 +8,6 @@ import org.apache.shardingsphere.sharding.api.sharding.standard.StandardSharding
 import org.apache.shardingsphere.sharding.exception.algorithm.sharding.ShardingAlgorithmInitializationException;
 
 import java.util.Collection;
-import java.util.List;
 import java.util.Properties;
 
 /**

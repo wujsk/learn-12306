@@ -1,11 +1,11 @@
-package com.learn.index12306.starter.database.config;
+package com.learn.index12306.framework.starter.database.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.core.incrementer.IdentifierGenerator;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
-import com.learn.index12306.starter.database.handler.CustomIdGenerator;
-import com.learn.index12306.starter.database.handler.MyMetaObjectHandler;
+import com.learn.index12306.framework.starter.database.handler.CustomIdGenerator;
+import com.learn.index12306.framework.starter.database.handler.MyMetaObjectHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 

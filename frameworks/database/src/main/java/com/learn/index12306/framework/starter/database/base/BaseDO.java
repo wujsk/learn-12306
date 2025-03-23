@@ -1,4 +1,4 @@
-package com.learn.index12306.starter.database.base;
+package com.learn.index12306.framework.starter.database.base;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;

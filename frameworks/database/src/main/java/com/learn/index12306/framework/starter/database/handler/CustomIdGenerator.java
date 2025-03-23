@@ -1,4 +1,4 @@
-package com.learn.index12306.starter.database.handler;
+package com.learn.index12306.framework.starter.database.handler;
 
 import com.baomidou.mybatisplus.core.incrementer.IdentifierGenerator;
 import com.learn.index12306.framework.starter.distributedid.util.SnowflakeIdUtil;
