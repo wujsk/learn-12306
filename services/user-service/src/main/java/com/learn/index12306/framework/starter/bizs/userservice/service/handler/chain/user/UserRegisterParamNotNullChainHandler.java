@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 
+import static com.learn.index12306.framework.starter.bizs.userservice.util.VaildateUtil.*;
+
 /**
  * @author: cyy
  * @create: 2025-03-23 15:17
@@ -21,13 +23,13 @@ public final class UserRegisterParamNotNullChainHandler implements UserRegisterC
             throw new ClientException(UserRegisterErrorCodeEnum.USER_NAME_NOTNULL);
         } else if (Objects.isNull(requestParam.getPassword())) {
             throw new ClientException(UserRegisterErrorCodeEnum.PASSWORD_NOTNULL);
-        } else if (Objects.isNull(requestParam.getPhone())) {
+        } else if (isValidPhoneNumber(requestParam.getPhone())) {
             throw new ClientException(UserRegisterErrorCodeEnum.PHONE_NOTNULL);
         } else if (Objects.isNull(requestParam.getIdType())) {
             throw new ClientException(UserRegisterErrorCodeEnum.ID_TYPE_NOTNULL);
-        } else if (Objects.isNull(requestParam.getIdCard())) {
+        } else if (isValidIDCard(requestParam.getIdCard())) {
             throw new ClientException(UserRegisterErrorCodeEnum.ID_CARD_NOTNULL);
-        } else if (Objects.isNull(requestParam.getMail())) {
+        } else if (isValidEmail(requestParam.getMail())) {
             throw new ClientException(UserRegisterErrorCodeEnum.MAIL_NOTNULL);
         } else if (Objects.isNull(requestParam.getRealName())) {
             throw new ClientException(UserRegisterErrorCodeEnum.REAL_NAME_NOTNULL);

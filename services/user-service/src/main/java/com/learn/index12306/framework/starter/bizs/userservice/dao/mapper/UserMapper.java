@@ -9,4 +9,10 @@ import com.learn.index12306.framework.starter.bizs.userservice.dao.entity.UserDO
  * @description: 用户持久层
  **/
 public interface UserMapper extends BaseMapper<UserDO> {
+
+    /**
+     * 注销用户
+     * @param userDO 注销用户入参
+     */
+    void deletionUser(UserDO userDO);
 }

@@ -2,6 +2,7 @@ package com.learn.index12306.framework.starter.database.base;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 
 import java.time.LocalDateTime;
 
@@ -28,5 +29,6 @@ public class BaseDO {
      * 删除标志
      */
     @TableField(fill = FieldFill.INSERT)
+    @TableLogic
     private Integer delFlag;
 }

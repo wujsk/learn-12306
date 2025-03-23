@@ -16,5 +16,5 @@ public class PassengerRemoveReqDTO {
      * 乘车人id
      */
     @Schema(name = "乘车人id", description = "乘车人id")
-    private String id;
+    private Long id;
 }
