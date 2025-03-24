@@ -128,7 +128,7 @@ public class UserLoginServiceImpl implements UserLoginService {
             StringRedisTemplate instance = (StringRedisTemplate) distributedCache.getInstance();
             return instance.opsForSet().isMember(USER_REGISTER_REUSE_SHARDING + hashShardingIdx(username), username);
         }
-        return true;
+        return false;
     }
 
     @Override
