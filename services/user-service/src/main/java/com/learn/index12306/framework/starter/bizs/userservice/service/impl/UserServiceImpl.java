@@ -71,13 +71,14 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Integer queryUserDeletionNum(Integer idType, String idCard) {
-        Long deletionCount = distributedCache.get(RedisKeyConstant.USER_DELETION_COUNT + ":" + idType + ":" + idCard, Long.class);
+        String deletionCountKey = RedisKeyConstant.USER_DELETION_COUNT + ":" + idType + ":" + idCard;
+        Long deletionCount = distributedCache.get(deletionCountKey, Long.class);
         if (deletionCount == null) {
             String key = RedisKeyConstant.USER_DELETION_LOCK + ":" + idType + ":" + idCard;
             RLock lock = redissonClient.getLock(key);
             lock.lock();
             try {
-                deletionCount = distributedCache.get(key, Long.class);
+                deletionCount = distributedCache.get(deletionCountKey, Long.class);
                 if (deletionCount == null) {
                     deletionCount = userDeletionMapper.selectCount(Wrappers.<UserDeletionDO>lambdaQuery()
                             .eq(UserDeletionDO::getIdType, idType)
