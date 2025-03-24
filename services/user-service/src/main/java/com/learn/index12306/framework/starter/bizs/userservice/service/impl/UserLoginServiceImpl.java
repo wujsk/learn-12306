@@ -13,6 +13,7 @@ import com.learn.index12306.framework.starter.bizs.userservice.dao.entity.*;
 import com.learn.index12306.framework.starter.bizs.userservice.dao.mapper.*;
 import com.learn.index12306.framework.starter.bizs.userservice.service.UserLoginService;
 import com.learn.index12306.framework.starter.bizs.userservice.service.UserService;
+import com.learn.index12306.framework.starter.bizs.userservice.util.PasswordUtil;
 import com.learn.index12306.framework.starter.common.util.BeanUtil;
 import com.learn.index12306.framework.starter.convention.exception.ClientException;
 import com.learn.index12306.framework.starter.convention.exception.ServiceException;
@@ -89,7 +90,7 @@ public class UserLoginServiceImpl implements UserLoginService {
         username = Optional.ofNullable(username).orElse(requestParam.getUsernameOrMailOrPhone());
         UserDO userDO = userMapper.selectOne(Wrappers.<UserDO>lambdaQuery()
                 .eq(UserDO::getUsername, username)
-                .eq(UserDO::getPassword, requestParam.getPassword())
+                .eq(UserDO::getPassword, PasswordUtil.encrypt(requestParam.getPassword()))
                 .select(UserDO::getId, UserDO::getUsername, UserDO::getRealName));
         if (userDO != null) {
             UserInfoDTO userInfoDTO = UserInfoDTO.builder()
@@ -142,7 +143,9 @@ public class UserLoginServiceImpl implements UserLoginService {
         }
         try {
             try {
-                int inserted = userMapper.insert(BeanUtil.convert(requestParam, UserDO.class));
+                UserDO userDO = BeanUtil.convert(requestParam, UserDO.class);
+                userDO.setPassword(PasswordUtil.encrypt(requestParam.getPassword()));
+                int inserted = userMapper.insert(userDO);
                 if (inserted < 1) {
                     throw new ServiceException(USER_REGISTER_FAIL);
                 }
