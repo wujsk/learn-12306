@@ -97,6 +97,7 @@ public class UserLoginServiceImpl implements UserLoginService {
                     .username(userDO.getUsername())
                     .realname(userDO.getRealName())
                     .build();
+            UserContext.setUser(userInfoDTO);
             String accessToken = JwtUtil.generateAccessToken(userInfoDTO);
 
             UserLoginRespDTO userLoginRespDTO = new UserLoginRespDTO(String.valueOf(userDO.getId()),
