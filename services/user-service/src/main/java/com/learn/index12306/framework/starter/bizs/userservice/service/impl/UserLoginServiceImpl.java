@@ -84,8 +84,9 @@ public class UserLoginServiceImpl implements UserLoginService {
             UserDO userDO = userMapper.selectOne(Wrappers.<UserDO>lambdaQuery()
                     .eq(UserDO::getPhone, usernameOrMailOrPhone));
             username = Optional.ofNullable(userDO).map(UserDO::getUsername)
-                    .orElseThrow(() -> new ClientException("用户名/手机号/邮箱不存在"));
+                    .orElse(null);
         }
+        username = Optional.ofNullable(username).orElse(requestParam.getUsernameOrMailOrPhone());
         UserDO userDO = userMapper.selectOne(Wrappers.<UserDO>lambdaQuery()
                 .eq(UserDO::getUsername, username)
                 .eq(UserDO::getPassword, requestParam.getPassword())
